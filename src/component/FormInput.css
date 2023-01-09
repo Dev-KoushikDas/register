@@ -1,0 +1,44 @@
+.formInput{
+display: flex;
+
+padding: 0 5%;
+}
+
+input{
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 3%;
+    border: 2px solid #14C2A3;
+    width: 55vw;
+}
+input ::placeholder{
+    color: #14C2A3;
+}
+.block{
+text-align: left;
+}
+
+label{
+display: flex;
+font-size: 22px;
+color:#14C2A3;
+text-align:start;
+}
+
+label:focus{
+outline-color: #14C2A3;
+}
+.mid{
+margin: 0 3%;
+}
+span{
+    text-align: start;
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: red;
+    display: none;
+}
+
+input:invalid[focused='true'] ~ span{
+display: block;
+}
